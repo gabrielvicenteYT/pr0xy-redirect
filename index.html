@@ -1,0 +1,71 @@
+<script>
+function gcloak() {
+  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+  link.type = 'image/x-icon';
+  link.rel = 'shortcut icon';
+  link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';
+  document.title = 'Google Drive';
+  console.log(document.title);
+  document.getElementsByTagName('head')[0].appendChild(link)
+};
+gcloak();
+setInterval(gcloak, 1000);
+</script>
+<style>
+#site {
+  border: 3px solid #D3D3D3;
+  cursor: crosshair;
+}
+
+#button {
+  border: 3px solid #D3D3D3;
+  cursor: crosshair;
+}
+
+#main {
+  cursor: crosshair;
+}
+
+div.container {
+  background-color: #2F3242;
+  cursor: crosshair;
+}
+
+div.container p {
+  font-family: Cursive;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: none;
+  font-variant: small-caps;
+  color: #FFFFFF;
+  background-color: #2F3242;
+  cursor: crosshair;
+}
+
+body {
+  background-color: #2F3242;
+}
+
+#iniyan_tich_sipport {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+</style>
+
+<div id="main">
+<center>
+<div class="container">
+<p>Enter the website that you want to go to.</p>
+</div>
+<form onsubmit="
+   window.open('//nodejsunblk1.herokuapp.com/proxy/' + document.getElementById('site').value);
+   }" autocomplete="off"><input id="site" type="text" size="50" /><input type="submit" id="button" value="Bypass It" /></form>
+</body></html>
+<img src=sunglasses.png id="iniyan_tich_sipport"></img>
+</center>
+</div>
